@@ -1,0 +1,1 @@
+type RemoveNaughtyChildren<T> = { [K in keyof T as K extends `naughty${infer _}`?never:K]:T[K] };

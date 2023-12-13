@@ -1,0 +1,1 @@
+type StreetSuffixTester<T,U extends string> =T extends `${infer _}${U}`?true:false
